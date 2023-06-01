@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let correo = prompt("ingrese su correo: ");
+
+        if (+correo[0] >= 0 && +correo[0] <= 9) {
+            alert("vuelva a intentarlo")
+        } else {
+            let correo2 = correo.toLowerCase();
+            if (correo2.endsWith("cumbre.edu.bo")) {
+                let password = prompt("ingrese contraseña");
+                if (password.length > 8) {
+                    if (password.startsWith("$*")) {
+                        let solicitudPost = confirm("desea crear un post?");
+                        if (solicitudPost == true) {
+                            let post = prompt("ingrese su primer post")
+                            if (post.length > 0) {
+                                let cadenaPost = "mi primer post en JS"
+                                alert("mi primer post en JS")
+                                console.warn(cadenaPost.split(" "))
+                            } else {
+                                alert("vuelva a intentarlo en <numerorandom> seg. \n< fechaActual > ")
+                            }
+                        } else{
+                            alert("mi primer post en JS")
+                        }
+                    } else{
+                        alert("vuelva a intentarlo")
+                    }
+                } else {
+                    alert("vuelva a intentarlo")
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
